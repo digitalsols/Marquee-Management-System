@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaadi Halls — Marquee Booking Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#6E1E2B; --maroon-dark:#4E141E; --gold:#C9972C; --ivory:#FAF6EE;
+  --ink:#2B2420; --ink-soft:#6B5F55; --line:#E4D9C8; --ok:#4F7A5B; --ok-bg:#E9F1EA;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:'Inter',sans-serif;font-size:15px;line-height:1.5}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:700;margin:0}
+header{background:var(--maroon);color:var(--ivory);padding:14px 16px calc(14px + env(safe-area-inset-top,0px));position:sticky;top:0;z-index:10}
+header .top{display:flex;align-items:baseline;justify-content:space-between}
+header h1{font-size:20px;letter-spacing:.2px}
+header .tag{font-size:12px;color:var(--gold);font-family:'Inter',sans-serif}
+nav{display:flex;gap:2px;margin-top:12px;overflow-x:auto}
+nav button{background:none;border:none;color:var(--ivory);opacity:.7;padding:8px 10px;font-size:13px;font-family:'Inter',sans-serif;border-bottom:2px solid transparent;white-space:nowrap;cursor:pointer}
+nav button.active{opacity:1;border-bottom-color:var(--gold);font-weight:600}
+main{padding:16px;max-width:640px;margin:0 auto;padding-bottom:40px}
+section{display:none}
+section.active{display:block}
+.card{border:1px solid var(--line);border-radius:2px;padding:14px;margin-bottom:12px;background:#fff}
+.hall-name{font-size:18px;margin-bottom:2px}
